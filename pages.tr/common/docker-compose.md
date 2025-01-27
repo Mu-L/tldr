@@ -1,7 +1,7 @@
 # docker compose
 
-> Çoklu konteynerli docker uygulamalarını çalıştırın ve yönetin.
-> Daha fazla bilgi için: <https://docs.docker.com/compose/reference/>.
+> Çoklu konteynerli Docker uygulamalarını çalıştırın ve yönetin.
+> Daha fazla bilgi için: <https://docs.docker.com/reference/cli/docker/compose/>.
 
 - Tüm konteynerleri listele:
 
@@ -9,7 +9,7 @@
 
 - Mevcut dizinde bir `docker-compose.yml` dosyası çalıştırarak arkaplandaki tüm konteynerleri çalıştırın ve başlatın:
 
-`docker compose up -d`
+`docker compose up --detach`
 
 - Tüm konteynerleri çalıştırın ve gerekiyorsa yeniden oluşturun:
 
@@ -17,7 +17,7 @@
 
 - Tüm konteynerleri alternatif bir beste dosyasıyla başlatın:
 
-`docker compose --file {{yoldan/dosyaya}} up`
+`docker compose -p {{proje Adı}} --file {{yoldan/dosyaya}} up`
 
 - Çalışan tüm konteynerleri durdurun:
 

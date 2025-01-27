@@ -1,7 +1,7 @@
 # csrutil
 
 > Manage the System Integrity Protection configuration.
-> More information: <https://ss64.com/osx/csrutil.html>.
+> More information: <https://keith.github.io/xcode-man-pages/csrutil.8.html>.
 
 - Display the System Integrity Protection status:
 
@@ -21,7 +21,7 @@
 
 - Add an IPv4 address to the list of allowed NetBoot sources:
 
-`csrutil netboot add {{ip_address}}`
+`csrutil netboot add {{ip}}`
 
 - Reset the System Integrity Protection status and clear the NetBoot list:
 
