@@ -1,7 +1,7 @@
 # docker compose
 
-> Run and manage multi container docker applications.
-> More information: <https://docs.docker.com/compose/reference/>.
+> Run and manage multi container Docker applications.
+> More information: <https://docs.docker.com/reference/cli/docker/compose/>.
 
 - List all running containers:
 
@@ -9,15 +9,15 @@
 
 - Create and start all containers in the background using a `docker-compose.yml` file from the current directory:
 
-`docker compose up -d`
+`docker compose up --detach`
 
 - Start all containers, rebuild if necessary:
 
 `docker compose up --build`
 
-- Start all containers using an alternate compose file:
+- Start all containers by specifying a project name and using an alternate compose file:
 
-`docker compose --file {{path/to/file}} up`
+`docker compose -p {{project_name}} --file {{path/to/file}} up`
 
 - Stop all running containers:
 

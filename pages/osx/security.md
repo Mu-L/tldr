@@ -1,7 +1,7 @@
 # security
 
 > Administer keychains, keys, certificates and the Security framework.
-> More information: <https://ss64.com/osx/security.html>.
+> More information: <https://keith.github.io/xcode-man-pages/security.1.html>.
 
 - List all available keychains:
 
@@ -21,12 +21,12 @@
 
 - Add a certificate from file to a [k]eychain (if -k isn't specified, the default keychain is used):
 
-`security add-certificates -k {{file.keychain}} {{path/to/cert.pem}}`
+`security add-certificates -k {{file.keychain}} {{path/to/cert_file.pem}}`
 
 - Add a CA certificate to the per-user Trust Settings:
 
-`security add-trusted-cert -k {{path/to/user-keychain.keychain-db}} {{path/to/ca-cert.pem}}`
+`security add-trusted-cert -k {{path/to/user-keychain.keychain-db}} {{path/to/ca-cert_file.pem}}`
 
 - Remove a CA certificate from the per-user Trust Settings:
 
-`security remove-trusted-cert {{path/to/ca-cert.pem}}`
+`security remove-trusted-cert {{path/to/ca-cert_file.pem}}`

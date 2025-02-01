@@ -1,12 +1,13 @@
 # rmdir
 
-> Removes a directory.
-> More information: <https://www.gnu.org/software/coreutils/rmdir>.
+> Remove directories without files.
+> See also: `rm`.
+> More information: <https://www.gnu.org/software/coreutils/manual/html_node/rmdir-invocation.html>.
 
-- Remove directory, provided it is empty. Use `rm -r` to remove non-empty directories:
+- Remove specific directories:
 
-`rmdir {{path/to/directory}}`
+`rmdir {{path/to/directory1 path/to/directory2 ...}}`
 
-- Remove the target and its parent directories (useful for nested dirs):
+- Remove specific nested directories recursively:
 
-`rmdir -p {{path/to/directory}}`
+`rmdir -p {{path/to/directory1 path/to/directory2 ...}}`

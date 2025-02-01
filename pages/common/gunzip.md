@@ -1,6 +1,6 @@
 # gunzip
 
-> Extract file(s) from a gzip (.gz) archive.
+> Extract files from a `gzip` (`.gz`) archive.
 > More information: <https://manned.org/gunzip>.
 
 - Extract a file from an archive, replacing the original file if it exists:
@@ -18,3 +18,7 @@
 - List the contents of a compressed file:
 
 `gunzip --list {{file.txt.gz}}`
+
+- Decompress an archive from `stdin`:
+
+`cat {{path/to/archive.gz}} | gunzip`

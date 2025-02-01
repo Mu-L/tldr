@@ -17,7 +17,7 @@
 
 - Run a file containing a list of FTP commands:
 
-`ftp -s:{{path/to/file}} {{host}}`
+`ftp -s:{{path\to\file}} {{host}}`
 
 - Download multiple files (glob expression):
 
@@ -31,6 +31,6 @@
 
 `mdelete {{*.txt}}`
 
-- Display detailed help:
+- Display help:
 
 `ftp --help`

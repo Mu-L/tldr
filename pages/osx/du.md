@@ -1,7 +1,7 @@
 # du
 
 > Disk usage: estimate and summarize file and directory space usage.
-> More information: <https://ss64.com/osx/du.html>.
+> More information: <https://keith.github.io/xcode-man-pages/du.1.html>.
 
 - List the sizes of a directory and any subdirectories, in the given unit (KiB/MiB/GiB):
 
@@ -21,7 +21,7 @@
 
 - List the human-readable sizes of a directory and any subdirectories, up to N levels deep:
 
-`du -h -d {{N}} {{path/to/directory}}`
+`du -h -d {{2}} {{path/to/directory}}`
 
 - List the human-readable size of all `.jpg` files in subdirectories of the current directory, and show a cumulative total at the end:
 

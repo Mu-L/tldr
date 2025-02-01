@@ -1,20 +1,28 @@
 # cd
 
-> Cambiar el directorio de trabajo.
+> Cambia el directorio de trabajo actual.
 > Más información: <https://manned.org/cd>.
 
 - Accede al directorio especificado:
 
 `cd {{ruta/al/directorio}}`
 
-- Accede al directorio *home* del usuario actual:
-
-`cd`
-
-- Accede al directorio padre del directorio actual:
+- Cambia al directorio padre:
 
 `cd ..`
 
-- Accede al directorio elegido previamente:
+- Accede al directorio raíz del usuario actual:
+
+`cd`
+
+- Accede al directorio personal del usuario especificado:
+
+`cd ~{{nombredeusuario}}`
+
+- Cambia al directorio elegido anteriormente:
 
 `cd -`
+
+- Cambia al directorio raíz:
+
+`cd /`
