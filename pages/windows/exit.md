@@ -7,10 +7,10 @@
 
 `exit`
 
-- Quit the current batch script:
+- Quit the current [b]atch script:
 
 `exit /b`
 
 - Quit using a specific exit code:
 
-`exit {{exit_code}}`
+`exit {{2}}`

@@ -1,28 +1,36 @@
 # mv
 
 > Move or rename files and directories.
-> More information: <https://www.gnu.org/software/coreutils/mv>.
+> More information: <https://www.gnu.org/software/coreutils/manual/html_node/mv-invocation.html>.
 
-- Move a file to an arbitrary location:
+- Rename a file or directory when the target is not an existing directory:
 
-`mv {{source}} {{target}}`
+`mv {{path/to/source}} {{path/to/target}}`
 
-- Move files into another directory, keeping the filenames:
+- Move a file or directory into an existing directory:
 
-`mv {{source1}} {{source2}} {{source3}} {{target_directory}}`
+`mv {{path/to/source}} {{path/to/existing_directory}}`
 
-- Do not prompt for confirmation before overwriting existing files:
+- Move multiple files into an existing directory, keeping the filenames unchanged:
 
-`mv -f {{source}} {{target}}`
+`mv {{path/to/source1 path/to/source2 ...}} {{path/to/existing_directory}}`
 
-- Prompt for confirmation before overwriting existing files, regardless of file permissions:
+- Do not prompt ([f]) for confirmation before overwriting existing files:
 
-`mv -i {{source}} {{target}}`
+`mv --force {{path/to/source}} {{path/to/target}}`
 
-- Do not overwrite existing files at the target:
+- Prompt for confirmation [i]nteractively before overwriting existing files, regardless of file permissions:
 
-`mv -n {{source}} {{target}}`
+`mv --interactive {{path/to/source}} {{path/to/target}}`
 
-- Move files in verbose mode, showing files after they are moved:
+- Do not overwrite ([n]) existing files at the target:
 
-`mv -v {{source}} {{target}}`
+`mv --no-clobber {{path/to/source}} {{path/to/target}}`
+
+- Move files in [v]erbose mode, showing files after they are moved:
+
+`mv --verbose {{path/to/source}} {{path/to/target}}`
+
+- Specify [t]arget directory so that you can use external tools to gather movable files:
+
+`{{find /var/log -type f -name '*.log' -print0}} | {{xargs -0}} mv --target-directory {{path/to/target_directory}}`

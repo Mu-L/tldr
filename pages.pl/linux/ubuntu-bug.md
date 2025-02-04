@@ -1,8 +1,7 @@
 # ubuntu-bug
 
-> This command is an alias of `apport-bug`.
-> More information: <https://manned.org/ubuntu-bug>.
+> To polecenie jest aliasem `apport-bug`.
 
-- View documentation for the original command:
+- Zobacz dokumentację oryginalnego polecenia:
 
 `tldr apport-bug`

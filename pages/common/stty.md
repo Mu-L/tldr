@@ -1,19 +1,15 @@
 # stty
 
 > Set options for a terminal device interface.
-> More information: <https://www.gnu.org/software/coreutils/stty>.
+> More information: <https://www.gnu.org/software/coreutils/manual/html_node/stty-invocation.html>.
 
 - Display all settings for the current terminal:
 
 `stty --all`
 
-- Set the number of rows:
+- Set the number of rows or columns:
 
-`stty rows {{rows}}`
-
-- Set the number of columns:
-
-`stty cols {{cols}}`
+`stty {{rows|cols}} {{count}}`
 
 - Get the actual transfer speed of a device:
 
@@ -22,3 +18,11 @@
 - Reset all modes to reasonable values for the current terminal:
 
 `stty sane`
+
+- Switch between raw and normal mode:
+
+`stty {{raw|cooked}}`
+
+- Turn character echoing off or on:
+
+`stty {{-echo|echo}}`
